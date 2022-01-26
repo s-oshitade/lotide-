@@ -1,5 +1,5 @@
 /**
- * Function compares two values and logs message accordingly.
+ * Takes in 2 values and returns true if they are equal and false otherwise.
  * @param {*} actual 
  * @param {*} expected 
  */
