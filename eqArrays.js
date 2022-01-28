@@ -1,6 +1,7 @@
 /**
  * takes in 2 arrays and returns true if the arrays are equal and false otherwise.
- * @param {Array}
+ * @param {Array} arr1
+ * @param {Array} arr2
  * @returns {Boolean}
  */
 const assertEqual = require('./assertEqual');
@@ -23,9 +24,10 @@ const eqArrays = (arr1, arr2) => {
 };
 
 //Test cases
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true) // => true
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false) // => false
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => true
+assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => false
 
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true) // => true
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false) // => false
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => true
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false); // => false
 module.exports = eqArrays;
+
