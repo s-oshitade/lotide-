@@ -5,12 +5,15 @@ const eqArrays = require('./eqArrays');
  * @param {*} expected
  */
 
- const assertArraysEqual = (actual, expected) => {
-  if (eqArrays(actual, expected)) { //Check if eqArrays returns truthy value
-    console.log(`\n✅✅✅ Assertion Passed!: ${actual} === ${expected}`);
-  } else {
-    console.log(`\n🛑🛑🛑 Assertion Failed!: ${actual} !== ${expected}`);
+const assertArraysEqual = (actual, expected) => {
+  if (!Array.isArray(actual) || !Array.isArray(expected)) {
+    console.log(`\n🛑🛑🛑 Please enter arrays only.`);
+    return;
   }
+  eqArrays(actual, expected) ? console.log(`\n✅✅✅ Assertion Passed!: ${actual} === ${expected}`)
+    : console.log(`\n🛑🛑🛑 Assertion Failed!: ${actual} !== ${expected}`);
 };
+
+assertArraysEqual(2, 2);
 
 module.exports = assertArraysEqual;
