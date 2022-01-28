@@ -1,7 +1,10 @@
 const assertArraysEqual = require('./assertArraysEqual');
 const eqArrays = require('./eqArrays');
 /**
- * Write a function that takes in a source array and an itemsToRemove arrays and returns only the items from the source array that are not in the itemsToRemove array.
+ * Function removes unwanted elements from a given array
+ * @param {*} source
+ * @param {*} itemsToRemove
+ * @returns array
  */
 
 const without = (source, itemsToRemove) => {
