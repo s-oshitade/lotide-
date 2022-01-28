@@ -13,11 +13,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install @s-oshitade/lotide`
+`npm install @s-oshitade/lotide-`
 
 **Require it:**
 
-`const _ = require('@s-oshitade/lotide');`
+`const _ = require('@s-oshitade/lotide-');`
 
 **Call it:**
 
