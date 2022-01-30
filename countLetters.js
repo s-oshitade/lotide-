@@ -6,8 +6,8 @@ const assertEqual = require('./assertEqual');
  */
 
 const countLetters = function (input) {
+  input = input.toLocaleLowerCase();
   inputArray = input.split("")
-  console.log(inputArray)
   let result = {};
   for (let element of input){
     if (element === " "){
