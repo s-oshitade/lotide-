@@ -1,8 +1,11 @@
+const assertArraysEqual = require('./assertArraysEqual');
+const eqArrays = require('./eqArrays');
 /**
  * Function returns all indices of letter positions in param
  * @param {string} sentence
  * @returns object
  */
+
  const letterPositions = function(sentence) {
   sentence = sentence.toLowerCase();
   const results = {};
