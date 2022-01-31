@@ -1,15 +1,16 @@
 const assertEqual = require('./assertEqual');
 /**
- * Returns first key which contains the given value
+ * Takes in an object and a value and returns the first key that corresponds to that value.
  * @param {object} obj
  * @param {string} val
+ * @returns {string}
  */
 
 const findKeyByValue = (object, value) => {
   let result = "";
-  for (let property in object) {
-    if (object[property] === value) {
-      result += property;
+  for (let key in object) {
+    if (object[key] === value) {
+      result += key;
       return result;
     }
   }
