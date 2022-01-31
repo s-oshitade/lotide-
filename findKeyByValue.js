@@ -1,9 +1,23 @@
 const assertEqual = require('./assertEqual');
+/**
+ * Returns first key which contains the given value
+ * @param {object} obj
+ * @param {string} val
+ */
 
-const findKeyByValue = function (){
-  
-}
-const bestTVShowsByGenre = { 
+const findKeyByValue = (object, value) => {
+  let result = "";
+  for (let property in object) {
+    if (object[property] === value) {
+      result += property;
+      return result;
+    }
+  }
+  return undefined;
+};
+
+
+const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
