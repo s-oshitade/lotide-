@@ -14,9 +14,8 @@ const findKeyByValue = (object, value) => {
       return result;
     }
   }
-  return undefined;
+  return undefined; //If the key does not exist, findKeyByValue returns undefined.
 };
-
 
 const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
