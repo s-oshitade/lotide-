@@ -14,7 +14,6 @@ const findKeyByValue = (object, value) => {
       return result;
     }
   }
-  return undefined; //If the key does not exist, findKeyByValue returns undefined.
 };
 
 const bestTVShowsByGenre = {
