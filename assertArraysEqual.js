@@ -6,14 +6,8 @@ const eqArrays = require('./eqArrays');
  */
 
 const assertArraysEqual = (actual, expected) => {
-  if (!Array.isArray(actual) || !Array.isArray(expected)) {
-    console.log(`\n🛑🛑🛑 Please enter arrays only.`);
-    return;
-  }
   eqArrays(actual, expected) ? console.log(`\n✅✅✅ Assertion Passed!: ${actual} === ${expected}`)
     : console.log(`\n🛑🛑🛑 Assertion Failed!: ${actual} !== ${expected}`);
 };
-
-assertArraysEqual(2, 2);
 
 module.exports = assertArraysEqual;
