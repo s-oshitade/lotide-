@@ -1,7 +1,7 @@
 /**
  * Takes in an array and returns the middle most element(s) of the array.
- * @param {Array} arr
- * @returns {Array}
+ * @param {array} arr
+ * @returns {array}
  */
 const middle = (arr) => {
   if (!Array.isArray(arr)) {
