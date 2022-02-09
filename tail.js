@@ -7,6 +7,9 @@ const tail = (arr) => {
   if (!Array.isArray(arr)) {
     return "Error: Input is not an array!";
   }
+  if (arr.length === 0) {
+    return undefined;
+  }
   let newArr = arr.slice(1);
   return newArr;
 };
