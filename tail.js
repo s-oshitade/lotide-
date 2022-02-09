@@ -1,13 +1,13 @@
 /**
  * Takes in an array and returns every element except the first.
- * @param {Array} arr
- * @returns {Array}
+ * @param {array} arr
+ * @returns {array}
  */
-const assertEqual = require('./assertEqual');
-
 const tail = (arr) => {
-  let newArr = [];
-  newArr = arr.slice(1);
+  if (!Array.isArray(arr)) {
+    return "Error: Input is not an array!";
+  }
+  let newArr = arr.slice(1);
   return newArr;
 };
 
