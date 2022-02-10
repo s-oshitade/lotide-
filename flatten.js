@@ -1,15 +1,17 @@
-const assertArraysEqual = require('./assertArraysEqual');
-const eqArrays = require('./eqArrays');
 /**
  * Function returns flattened version of input array
- * @param {Array} inputArr
- * @returns {Array}
+ * @param {array} inputArr
+ * @returns {array}
+ * @todo Revise to handle deeper nesting with recursion
  */
 
 const flatten = (inputArr) => {
   let flattenedArr = [];
   if (!Array.isArray(inputArr)) {
-    return "Error: Please provide an array as input.";
+    return "Error: Input is not an array!";
+  }
+  if (inputArr.length === 0) {
+    return undefined;
   }
   for (const element of inputArr) {
     if (!Array.isArray(element)) {
@@ -20,15 +22,7 @@ const flatten = (inputArr) => {
       }
     }
   }
-  console.log(flattenedArr);
   return flattenedArr;
 };
-
-/**
- * @todo Revise to handle deeper nesting with recursion
- */
-
-// Test cases
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]) 
 
 module.exports = flatten;
