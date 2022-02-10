@@ -4,8 +4,11 @@
  * @param {*} expected 
  */
 const assertEqual = function(actual, expected) {
-  actual === expected ? console.log(`\n✅✅✅ Assertion Passed: ${actual} === ${expected}`)
-    : console.log(`\n🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  if (actual === expected) {
+    console.log(`\n✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`\n🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  }
 };
 
 module.exports = assertEqual;
