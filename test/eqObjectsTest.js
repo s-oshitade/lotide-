@@ -6,6 +6,10 @@ describe("#eqObjects", () => {
     assert.deepEqual(eqObjects({ a: "1", b: "2" }, { a: "1", b: "2" }), true);
   });
 
+  it('returns true for { c: "1", d: ["2", 3] }, { d: ["2", 3], c: "1" }', () => {
+    assert.deepEqual(eqObjects({ c: "1", d: ["2", 3] }, { d: ["2", 3], c: "1" }), true);
+  });
+
   it('returns true for { Name: "Jake", Age: 21 }, { Name: "Jake", Age: 21 }', () => {
     assert.deepEqual(eqObjects({ Name: "Jake", Age: 21 }, { Name: "Jake", Age: 21 }), true);
   });
