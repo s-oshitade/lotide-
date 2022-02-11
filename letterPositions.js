@@ -1,11 +1,10 @@
 /**
  * Takes in a string and returns all indices of letter positions in the string.
  * @param {string} sentence
- * @returns object
+ * @returns {object}
  */
-
  const letterPositions = function(sentence) {
-  sentence = sentence.toLowerCase().split(" ").join("");
+  sentence = sentence.toLowerCase();
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
     if (sentence[i] !== " ") {
@@ -18,5 +17,6 @@
   }
   return results;
 };
-letterPositions("Lighthouse in the house");
+
 module.exports = letterPositions;
+
