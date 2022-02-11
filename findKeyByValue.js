@@ -1,26 +1,19 @@
 const assertEqual = require('./assertEqual');
+const findKey = require('./findKey');
 /**
  * Takes in an object and a value and returns the first key that corresponds to that value.
  * @param {object} obj
  * @param {string} val
  * @returns {string}
  */
-
-const findKeyByValue = (object, value) => {
+const findKeyByValue = (obj, value) => {
   let result = "";
-  for (let key in object) {
-    if (object[key] === value) {
+  for (let key in obj) {
+    if (obj[key] === value) {
       result += key;
       return result;
     }
   }
 };
 
-const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
-
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+module.exports = findKeyByValue;
