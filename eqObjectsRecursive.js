@@ -19,15 +19,15 @@ const eqObjectsRecursive = function(object1, object2) {
     return false;
   }
   for (let key of keysList1) {
-    if (typeof object1[key] !== 'object' || typeof object1[key] !== 'object') {
+    if (typeof object1[key] !== 'object' || typeof object1[key] !== 'object') { //handle primitive values
       if (object1[key] !== object2[key]) {
         return false;
       }
     }
-    if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {
+    if (Array.isArray(object1[key]) && Array.isArray(object2[key])) {  //handle arrays
       return eqArrays(object1[key], object2[key]);
     }
-    if ((typeof object1[key] === 'object' &&
+    if ((typeof object1[key] === 'object' && 
     object1[key] !== null) && (typeof object2[key] === 'object' &&
     object2[key] !== null)) {
       if (!eqObjectsRecursive(object1[key], object2[key])) {
@@ -37,5 +37,4 @@ const eqObjectsRecursive = function(object1, object2) {
   }
   return true;
 };
-console.log(eqObjectsRecursive({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }));
 module.exports = eqObjectsRecursive;
