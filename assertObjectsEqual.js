@@ -1,6 +1,6 @@
 const eqObjects = require('./eqObjects');
 /**
- * Compares two objects
+ * Takes in 2 objects and returns true if they are equal and false otherwise
  * @param {*} obj1
  * @param {*} obj2
  * @returns boolean
