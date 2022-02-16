@@ -25,19 +25,6 @@ function eqArraysRecursive (arr1, arr2) {
 };
 
 module.exports = eqArraysRecursive;
-//  Test cases
-//  assertEqual(eqArraysRecursive([1, 2, 3], [1, 2, 3]), true); // => true
-//  assertEqual(eqArraysRecursive([1, 2, 3], [3, 2, 1]), false); // => false
-  
-//  assertEqual(eqArraysRecursive(["1", "2", "3"], ["1", "2", "3"]), true); // => true
-//  assertEqual(eqArraysRecursive(["1", "2", "3"], ["1", "2", 3]), false); // => false
- 
-//  console.log("____Nested arrays tested below____");
- 
-//  assertEqual(eqArraysRecursive([[2, 3], [4]], [[2, 3], [4]]), true); // => true
- 
-//  assertEqual(eqArraysRecursive([[2, 3], [4]], [[2, 3], [4, 5]]), false); // => false
-//  assertEqual(eqArraysRecursive([[2, 3], [4]], [[2, 3], 4]), false) // => false
   
   
   
