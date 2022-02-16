@@ -26,7 +26,7 @@ describe("#assertEqual", () => {
   it('returns true for Number.isNaN("I love to code!"), Number.isNaN("I love to code!")', () => {
     assert.strictEqual(assertEqual(Number.isNaN(7), Number.isNaN(7)), true);
   });
-  it('returns true for NaN, NaN', () => {
+  it('returns false for NaN, NaN', () => {
     assert.strictEqual(assertEqual(NaN, NaN), false); //NaN is the only value in JavaScript which is not equal to itself.
   });
 });
