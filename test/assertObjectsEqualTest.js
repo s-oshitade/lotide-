@@ -5,7 +5,7 @@ describe("#assertObjectsEqual", () => {
   it('returns true for { a: "1", b: "2" }, { b: "2", a: "1" }', () => {
     assert.deepEqual(assertObjectsEqual({ a: "1", b: "2" }, { b: "2", a: "1" }), true);
   });
-  
+
   it('returns true for { c: "1", d: ["2", 3] }, { d: ["2", 3], c: "1" }', () => {
     assert.deepEqual(assertObjectsEqual({ c: "1", d: ["2", 3] }, { d: ["2", 3], c: "1" }), true);
   });
@@ -14,7 +14,7 @@ describe("#assertObjectsEqual", () => {
     assert.deepEqual(assertObjectsEqual({ c: "1", d: ["2", 3] }, { c: "1", d: ["2", 3, 4] }), false);
   });
 
-  it('returns true for { a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }', () => {
+  it('returns false for { a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }', () => {
     assert.deepEqual(assertObjectsEqual({ a: { z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }), false); //Fxn is not designed to handle nested objects.
   });
 
