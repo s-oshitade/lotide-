@@ -1,4 +1,3 @@
-const assertArraysEqual = require('./assertArraysEqual');
 /**
  * Takes in an array and function (callback) and returns a slice of the array based on the criteria specified in the callback.
  * @param {array}
