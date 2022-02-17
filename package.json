@@ -2,7 +2,7 @@
   "name": "@s-oshitade/lotide-",
   "version": "1.0.2",
   "description": "A mini clone of the [Lodash](https://lodash.com) library. ## Author [Seun Oshitade](https://www.linkedin.com/in/olu-oshitade-53001120b/) ## Purpose",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
