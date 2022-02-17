@@ -27,13 +27,15 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `assertArraysEqual`: Function takes in 2 arrays and returns true if they are equal and false otherwise.
-* `assertEqual`: Function takes in 2 values and returns true if they are equal and false otherwise.
+* `assertArraysEqual`: Function that takes in 2 arrays and returns true if they are equal and false otherwise.
+* `assertEqual`: Function that takes in 2 values and returns true if they are equal and false otherwise.
 * `assertObjectsEqual`: Function that takes in 2 objects and returns true if they are equal and false otherwise.
 * `countLetters`: Function that takes in a sentence and returns a count of each of the letters in the sentence.
 * `countOnly`: Function that takes in a collection of string items and returns counts for a specific subset of those items.
 * `eqArrays`: Function that takes in 2 arrays and returns true if the arrays are equal and false otherwise.
-* `eqObjects`: Function that takes in 2 objects and return true if they are equal and false otherwise.
+* `eqArraysRecursive`: Function that takes in 2 arrays and returns true if the arrays are equal and false otherwise. Supports sub-arrays.
+* `eqObjects`: Function that takes in 2 objects and returns true if they are equal and false otherwise.
+* `eqObjectsRecursive`: Function that takes in 2 objects and returns true if they are equal and false otherwise. Supports nested objects.
 * `findKey`: Function that takes in an object and callback and returns the first key that meets the criteria specified in callback.
 * `findKeyByValue`: Function that takes in an object and a value and returns the first key that corresponds to that value.
 * `flatten`: Function that takes in an array that contains elements including nested array of elements and returns a flattened version of the array.
