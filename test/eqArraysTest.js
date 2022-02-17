@@ -1,4 +1,4 @@
-const assert = require('chai').assert;
+const {assert} = require('chai');
 const eqArrays = require('../eqArrays');
 
 describe("#eqArrays", () => {
