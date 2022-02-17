@@ -1,6 +1,7 @@
 /**
  * Takes in an array and returns the first element in the array.
  * @param {array} arr
+ * @returns {*}
  */
 const head = (arr) => {
   if (!Array.isArray(arr)) {
