@@ -18,8 +18,8 @@ describe("#tail", () => {
     assert.deepEqual(tail(['Hello', 'Lighthouse', 'Labs']), ['Lighthouse', 'Labs']);
   });
 
-  it("returns undefined for []", () => {
-    assert.strictEqual(tail([]), undefined);
+  it("returns [] for []", () => {
+    assert.deepEqual(tail([]), []);
   });
 
   it("returns 'Error: Input is not an array!' for 307", () => {
