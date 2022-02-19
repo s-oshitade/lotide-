@@ -1,4 +1,4 @@
-# @s-oshitade/Lotide- | ver 1.0.3
+# @s-oshitade/Lotide- | ver 1.0.4
 
 A mini clone of the [Lodash](https://lodash.com) library.
 ## Author
