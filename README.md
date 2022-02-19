@@ -2,7 +2,7 @@
 
 A mini clone of the [Lodash](https://lodash.com) library.
 ## Author
-[Seun Oshitade](https://www.linkedin.com/in/olu-oshitade-53001120b/)
+[Seun Oshitade](https://www.linkedin.com/in/seun-oshitade-53001120b/)
 ## Purpose
 
 **_BEWARE:_ This library was published for learning purposes. It is _not_ intended for use in production-grade software.**
